@@ -15,13 +15,17 @@ Intel Macs are not in this drop.
 
 **Windows.** SmartScreen may say “Windows protected your PC”. Choose **More info** → **Run anyway**.
 
-**Mac.** Drag the app to Applications. These builds are not notarized. If macOS says the app is **damaged**, it is Gatekeeper, not a corrupt file:
+**Mac.** Drag the app to Applications. These builds are not notarized. On current macOS the first open is:
+
+> Apple could not verify “Desktop PDF Aggregator” is free of malware…
+
+That is Gatekeeper on an unsigned download. Click Done, then **System Settings → Privacy & Security → Open Anyway**. Or:
 
 ```bash
-xattr -cr "/Applications/Desktop PDF Aggregator.app"
+/usr/bin/xattr -cr "/Applications/Desktop PDF Aggregator.app"
 ```
 
-Then open it. Or System Settings → Privacy & Security → Open Anyway. If it only says unidentified developer: **right-click** → **Open** → **Open**.
+then open the app.
 
 ## What it is
 

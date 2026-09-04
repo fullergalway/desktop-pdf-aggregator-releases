@@ -53,12 +53,19 @@
       </a>
     </div>
     <h2>First time opening</h2>
-    <p>These builds are not Apple-notarized yet, so the OS will warn you.</p>
+    <p>These builds are not Apple-notarized yet. macOS will warn you. That is Gatekeeper, not malware in the file.</p>
     <ul>
       <li><strong>Windows:</strong> if SmartScreen appears, choose More info → Run anyway.</li>
-      <li><strong>Mac:</strong> drag to Applications. If macOS says it is damaged, that is Gatekeeper on an unsigned download — not a corrupt file. In Terminal:<br>
-        <code>xattr -cr "/Applications/Desktop PDF Aggregator.app"</code><br>
-        then open the app. Or System Settings → Privacy &amp; Security → Open Anyway.</li>
+      <li><strong>Mac:</strong> drag to Applications, then open. If you see <em>“Apple could not verify … is free of malware”</em>:
+        <ol>
+          <li>Click Done (or OK).</li>
+          <li>Open <strong>System Settings → Privacy &amp; Security</strong>.</li>
+          <li>Scroll to the message about Desktop PDF Aggregator → <strong>Open Anyway</strong> → confirm.</li>
+        </ol>
+        Or in Terminal:<br>
+        <code>/usr/bin/xattr -cr "/Applications/Desktop PDF Aggregator.app"</code><br>
+        then open the app again.
+      </li>
     </ul>
     <h2>Notes</h2>
     <ul>
