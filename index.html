@@ -53,10 +53,12 @@
       </a>
     </div>
     <h2>First time opening</h2>
-    <p>These builds are not code-signed yet, so the OS will warn you.</p>
+    <p>These builds are not Apple-notarized yet, so the OS will warn you.</p>
     <ul>
       <li><strong>Windows:</strong> if SmartScreen appears, choose More info → Run anyway.</li>
-      <li><strong>Mac:</strong> drag to Applications, then right-click the app → Open → Open.</li>
+      <li><strong>Mac:</strong> drag to Applications. If macOS says it is damaged, that is Gatekeeper on an unsigned download — not a corrupt file. In Terminal:<br>
+        <code>xattr -cr "/Applications/Desktop PDF Aggregator.app"</code><br>
+        then open the app. Or System Settings → Privacy &amp; Security → Open Anyway.</li>
     </ul>
     <h2>Notes</h2>
     <ul>

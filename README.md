@@ -15,7 +15,13 @@ Intel Macs are not in this drop.
 
 **Windows.** SmartScreen may say “Windows protected your PC”. Choose **More info** → **Run anyway**.
 
-**Mac.** Drag the app to Applications. If macOS says it cannot be opened because it is from an unidentified developer: **right-click** the app → **Open** → **Open**.
+**Mac.** Drag the app to Applications. These builds are not notarized. If macOS says the app is **damaged**, it is Gatekeeper, not a corrupt file:
+
+```bash
+xattr -cr "/Applications/Desktop PDF Aggregator.app"
+```
+
+Then open it. Or System Settings → Privacy & Security → Open Anyway. If it only says unidentified developer: **right-click** → **Open** → **Open**.
 
 ## What it is
 
