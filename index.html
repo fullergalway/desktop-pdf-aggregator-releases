@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desktop PDF Aggregator — evaluation download</title>
+  <style>
+    :root { color-scheme: light; }
+    body {
+      margin: 0;
+      font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: #1a1a1a;
+      background: #f6f4f0;
+    }
+    main {
+      max-width: 36rem;
+      margin: 0 auto;
+      padding: 3rem 1.25rem 4rem;
+    }
+    h1 { font-size: 1.6rem; font-weight: 650; letter-spacing: -0.02em; margin: 0 0 0.5rem; }
+    .lede { color: #444; margin: 0 0 1.75rem; }
+    .downloads { display: grid; gap: 0.75rem; margin: 0 0 2rem; }
+    a.btn {
+      display: block;
+      background: #1a1a1a;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.85rem 1rem;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    a.btn:hover { background: #333; }
+    a.btn span { display: block; font-weight: 400; font-size: 0.85rem; color: #ccc; margin-top: 0.15rem; }
+    h2 { font-size: 1rem; margin: 1.5rem 0 0.4rem; }
+    p, li { font-size: 0.98rem; }
+    ul { padding-left: 1.2rem; }
+    .foot { margin-top: 2.5rem; font-size: 0.85rem; color: #666; }
+    .foot a { color: inherit; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Desktop PDF Aggregator</h1>
+    <p class="lede">Evaluation build. Turn a folder of case files into one chronological PDF. Everything stays on your computer.</p>
+    <div class="downloads">
+      <a class="btn" href="https://github.com/fullergalway/desktop-pdf-aggregator-releases/releases/latest/download/Desktop-PDF-Aggregator-windows-x64.exe">
+        Download for Windows
+        <span>64-bit installer · Windows 10 or 11</span>
+      </a>
+      <a class="btn" href="https://github.com/fullergalway/desktop-pdf-aggregator-releases/releases/latest/download/Desktop-PDF-Aggregator-macos-arm64.dmg">
+        Download for Mac
+        <span>Apple Silicon (M1 and later) · macOS 11+</span>
+      </a>
+    </div>
+    <h2>First time opening</h2>
+    <p>These builds are not code-signed yet, so the OS will warn you.</p>
+    <ul>
+      <li><strong>Windows:</strong> if SmartScreen appears, choose More info → Run anyway.</li>
+      <li><strong>Mac:</strong> drag to Applications, then right-click the app → Open → Open.</li>
+    </ul>
+    <h2>Notes</h2>
+    <ul>
+      <li>No account and no upload. Files never leave the machine.</li>
+      <li>Intel Macs are not included in this drop.</li>
+      <li>Exports may show a small “trial / unlicensed” footer until a licence is activated.</li>
+    </ul>
+    <p class="foot">
+      Direct files also live on
+      <a href="https://github.com/fullergalway/desktop-pdf-aggregator-releases/releases/latest">GitHub Releases</a>.
+    </p>
+  </main>
+</body>
+</html>
